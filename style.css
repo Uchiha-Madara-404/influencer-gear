@@ -1,0 +1,397 @@
+/* Shared css */
+*
+{
+    font-family: Poppins;
+}
+
+body
+{
+    width: 1440px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
+
+/* Css-custom property */
+:root
+{
+    --collection-head-color: #18191F;
+    --collection-price-color: rgba(0, 0, 0, 0.87);
+    --collection-text-color: #787885;
+    --collection-box-color: #FFF;
+
+    --feature-heading-color: #0A0826;
+    --feature-text-color: #6C6C6C;
+
+    --button-background-color: #E02C6D;
+
+    --footer-background-color:  #0A0826;
+    --footer-text-color: white;
+}
+
+/* Style for navbar */
+.navbar
+{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.navh1
+{
+    color: #3A3A3A;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 24px;
+    font-weight: 700;
+    width: 243px;
+    height: 52.2px;
+}
+
+.link
+{
+    display: flex;
+    gap: 20px;
+}
+
+.link > li
+{
+    list-style: none;
+}
+
+.nav-link
+{
+    text-decoration: none;
+    color: #3A3A3A;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+    font-weight: 600;
+    width: 49px;
+    height: 34.8px;
+}
+
+.link-logo
+{
+    width: 24px;
+    height: 24px;
+}
+
+/* Style for starting-section */
+.start-conatiner
+{
+    margin-left: 200px; 
+    display: flex;
+    gap: 70px;
+}
+
+.starting-head
+{
+    width: 582px;
+    height: 133px;
+    color: #3A3A3A;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.start-content
+{
+    width: 505px;
+    height: 60.9px;
+    color: #3A3A3A;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+}
+
+.preebook
+{
+    display: inline-flex;
+    padding: 10px 24px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 41px;
+    background: #E02C6D;
+    border-color: #E02C6D;
+    color: white;
+    cursor: pointer;
+}
+
+.start-image img
+{
+    width: 440px;
+    height: 414px;
+    flex-shrink: 0;
+    background-image: url(images/Circle\ design.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Style for Sponsor-section */
+.sponsor-list
+{
+    display: flex;
+    justify-content: center;
+    gap: 65px;
+    margin-top: 70px;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+.sponsor-img
+{
+    width: 84px;
+    height: 25.284px;
+    margin: 20px 0px 20px 0px;
+}
+
+/* Style for main section */
+ 
+  /* Style for collection section */
+.heading
+{
+    color: #3A3A3A;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 70px;
+    text-align: center;
+}
+
+.collection
+{
+    display: grid;
+    grid-template-columns: repeat(3,0.2fr);
+    gap: 30px;
+    justify-content: center;
+}
+
+.collection-box
+{
+    width: 329px;
+    height: 476px;
+    border-radius: 5px;
+    background: var(--collection-box-color);
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding-left: 25px;
+    padding-top: 17px;
+}
+
+.collection-img
+{
+    width: 300px;
+    height: 256px;
+    border-radius: 5px;
+}
+
+.collection-head
+{
+    color: var(--collection-head-color);
+    font-feature-settings: 'liga' off;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.price
+{
+    color: var(--collection-price-color);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+}
+
+.collection-text
+{
+    color: var(--collection-text-color);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 143%; 
+    letter-spacing: 0.252px;
+}
+
+.see-more
+{
+    margin: 40px 0px 0px 1200px;
+}
+.see
+{
+    text-decoration: none;
+    color: rgba(224, 44, 109, 0.87);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.see img
+{
+width: 16px;
+height: 14.001px;
+flex-shrink: 0;
+}
+ 
+ /* Style for feature-section */
+.feature-content
+{
+    display: flex;
+    align-items: center;
+    margin-left: 165px;
+    gap: 100px;
+}
+
+.feature-heading
+{
+    color: var(--feature-heading-color);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 60px; 
+}
+
+.feature-text
+{
+    width: 501px;
+    height: auto;
+    color: var(--feature-text-color);
+    font-size: 16px;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-weight: 700;
+    line-height: 28px; 
+}
+
+.feature-btn
+{
+    background: var(--button-background-color);
+    color: white;
+    border: #E02C6D;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Style for Footer */
+.footer
+{
+    text-align: center;
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
+    margin-top: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.social-link
+{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+}
+
+.social-link img
+{
+    width: 32px;
+    height: 32px;
+}
+
+/* Responsive for mobile */
+@media screen and (max-width:950px) {
+   
+    /* Navbar responsive */
+    body
+    {
+        width: auto;
+    }
+    .navbar
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .link
+    {
+        padding: 0;
+    }
+
+    /* Starting-section */
+    .start-conatiner
+    {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0;
+        gap: 0;
+    }
+    .starting-head
+    {
+        width: 304px;
+        height: 78px;
+        font-size: 28px;
+        text-align: center;
+    }
+    .start-content
+    {
+        width: 321px;
+        height: 65px;
+        text-align: center;
+    }
+    .start-image img
+    {
+        width: 202px;
+        height: 190px;
+        margin-top: 73px;
+    }
+    .button
+    {
+        text-align: center;
+    }
+
+    /* Sponsor-section */
+    .sponsor-list
+    {
+        display: grid;
+        grid-template-columns: repeat(3,61.94px);
+        justify-content: center;
+        border: none;
+        margin: 0;
+        gap: 0; 
+    }
+    .sponsor-img
+    {
+        width: 43.381px;
+        height: 18.838px;
+        flex-shrink: 0;
+    }
+
+    /* main-section */
+     /* collection-section */
+    .collection
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .see-more
+    {
+        margin: 32px 0px 0px 295px;
+    } 
+
+    /* Feature-section */
+    .feature-content
+    {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-left: 0px;
+        gap: 20px;
+    }
+    .feature-heading
+    {
+        font-size: 24px;
+    }
+    .feature-image img
+    {
+        width: 299px;
+        height: 188px;
+    }
+    .feature-text 
+    {
+        width: 80%;
+    }
+}
